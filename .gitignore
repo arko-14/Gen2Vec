@@ -1,0 +1,5 @@
+service/credentials.json
+output/
+*.csv
+__pycache__/
+*.pyc
