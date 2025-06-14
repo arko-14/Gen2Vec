@@ -48,15 +48,15 @@ This project demonstrates a **containerized machine learning service** that:
 
 docker-project/
 └── service/
-    ├── app/
-    │   ├── app.py
-    │   ├── data_generator.py
-    │   └── embedding_service.py
-    ├── data/
-    │   └── generated.csv
-    ├── Dockerfile
-    ├── credentials.json
-    └── requirements.txt
+├── app/
+│   ├── app.py
+│   ├── data_generator.py
+│   └── embedding_service.py
+├── data/
+│   └── generated.csv
+├── Dockerfile
+├── credentials.json
+└── requirements.txt
 ```
 
 ---
