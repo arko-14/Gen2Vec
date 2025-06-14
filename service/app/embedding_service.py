@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, Distance
-from langchain_google_vertexai.embeddings import VertexAIEmbeddings  # ✅ Correct import
+from langchain_google_vertexai.embeddings import VertexAIEmbeddings  
 
 def embed_and_preview(csv_path: str, collection_name: str = "records"):
     df = pd.read_csv(csv_path)
@@ -25,7 +25,7 @@ def embed_and_preview(csv_path: str, collection_name: str = "records"):
     df_embed.to_csv("output/embeddings.csv", index=False)
     print("\n✅ Saved to output/embeddings.csv")
 
-    # 🟢 FIX: Use 'qdrant' instead of 'localhost'
+   
     client = QdrantClient(host="qdrant", port=6333)
 
     client.recreate_collection(
