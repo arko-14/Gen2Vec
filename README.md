@@ -46,17 +46,17 @@ This project demonstrates a **containerized machine learning service** that:
 
 ## 📁 Project Structure
 
-```
-.
-├── docker-compose.yml
-├── service/
-│   ├── Dockerfile
-│   ├── main.py                # Main embedding and upload logic
-│   ├── data/
-│   │   └── generated.csv      # Text data generated/saved here
-│   ├── output/
-│   │   └── embeddings.csv     # Embeddings saved here
-│   └── credentials.json       # GCP Vertex AI credentials
+docker-project/
+└── service/
+    ├── app/
+    │   ├── app.py
+    │   ├── data_generator.py
+    │   └── embedding_service.py
+    ├── data/
+    │   └── generated.csv
+    ├── Dockerfile
+    ├── credentials.json
+    └── requirements.txt
 ```
 
 ---
