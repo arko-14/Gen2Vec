@@ -1,4 +1,5 @@
 service/credentials.json
+.env
 output/
 *.csv
 __pycache__/
