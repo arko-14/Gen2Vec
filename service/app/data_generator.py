@@ -2,7 +2,7 @@
 import os
 import json
 import pandas as pd
-from langchain_google_vertexai import VertexAI  # Correct import
+from langchain_google_vertexai import VertexAI  
 
 def clean_json_response(response: str) -> str:
     """
@@ -23,7 +23,7 @@ def generate_data(output_csv: str, n: int = 100):
         temperature=0.7,
         project="gen-lang-client-0378774532"  # Hardcoded project ID
     )
-    llm.model_rebuild()  # Needed for Pydantic v2
+    llm.model_rebuild()  
 
     rows = []
     for i in range(n):
