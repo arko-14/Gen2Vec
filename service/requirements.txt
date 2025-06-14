@@ -1,0 +1,7 @@
+flask
+langchain
+google-cloud-aiplatform
+pandas
+qdrant-client
+langchain-community
+langchain-google-vertexai
