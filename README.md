@@ -34,7 +34,6 @@ This project demonstrates a **containerized machine learning service** that:
 * Purpose-built for **vector similarity search** — ideal for storing LLM embeddings.
 * Open-source and container-friendly.
 * Supports **payloads**, which means we can also store the original text alongside the vector for contextual retrieval.
-* Being a **NoSQL database**, it meets the assignment requirement for using either SQL or NoSQL.
 
 ### ✅ Containerization: **Docker + Docker Compose**
 
