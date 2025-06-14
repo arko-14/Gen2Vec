@@ -66,8 +66,8 @@ This project demonstrates a **containerized machine learning service** that:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ml-vector-docker.git
-   cd ml-vector-docker
+   git clone https://github.com/arko-14/docker-project-.git
+   cd docker-project-
    ```
 
 2. Add your `credentials.json` from Google Cloud to `./service/`
@@ -97,7 +97,6 @@ This project demonstrates a **containerized machine learning service** that:
 ## 🔍 Future Enhancements
 
 * Add a REST API to query Qdrant with new text and return most similar entries.
-* Integrate SQLite or MongoDB for metadata storage if required.
 * Add a Streamlit dashboard for visualization.
 
 ---
@@ -112,5 +111,3 @@ This project showcases:
 * Clean and modular ML pipeline design
 
 ---
-
-Let me know your GitHub repo name if you'd like this customized further, or need a README badge version too!
