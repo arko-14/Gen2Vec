@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  ml-service:
+    build:
+      context: ./service
+      dockerfile: Dockerfile
+    depends_on:
+      - qdrant
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
+      - PROJECT_ID=gen-lang-client-0378774532
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./service/data:/app/data
+      - ./service/credentials.json:/app/credentials.json:ro
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+volumes:
+  qdrant_storage:
