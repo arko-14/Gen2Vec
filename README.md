@@ -1,6 +1,5 @@
 # docker-project-
 
-Here's a complete and well-structured **README** for your assignment, explaining your design decisions and setup:
 
 ---
 
