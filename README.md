@@ -3,21 +3,23 @@
 
 ---
 
-# 🚀 Dockerized ML Service with LLM-based Data Generation & Vector Embedding using Qdrant
+# Dockerized ML Service LLM-based Data Generation & Vector embedding utilizing Qdrant
 
-This project demonstrates a **containerized machine learning service** that:
 
-* Generates synthetic data using a **Large Language Model (LLM)**
-* Saves the generated data as a **CSV file**
-* Converts the text into **embeddings**
-* Stores the embeddings into a **local vector database (Qdrant)**
-* All of this is wrapped in a **Dockerized pipeline** using `docker-compose`.
+This project shows a containerized machine learning service which:
+
+ *Produces a synthetic data with a **Large Language Model (LLM)**
+ *Saves the created data in the form of **CSV file**
+ *Embeds the text**
+ *Persists the embeddings in a local key-value cache **(Qdrant)**
+ *It is all put into a Dockerized pipeline with `docker-compose`.**
+.
 
 ---
 
-## 🧠 Why These Choices?
+##  So why these choices?
 
-### ✅ LLM: `text-embedding-005` via **Vertex AI Embeddings**
+### LLM: `text-embedding-005` by **Vertex AI Embeddings**
 
 * Chosen for **speed**, **accuracy**, and **ease of integration** via Langchain.
 * Efficiently converts input text into meaningful **768-dimensional vectors**.
