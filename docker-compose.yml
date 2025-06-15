@@ -16,6 +16,7 @@ services:
     volumes:
       - ./service/data:/app/data
       - ./service/credentials.json:/app/credentials.json:ro
+      - ./service/output:/app/output  
 
   qdrant:
     image: qdrant/qdrant:latest
