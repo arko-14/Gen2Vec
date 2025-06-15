@@ -25,7 +25,7 @@ def embed_and_preview(csv_path: str, collection_name: str = "records"):
     df_embed.to_csv("output/embeddings.csv", index=False)
     print("\n✅ Saved to output/embeddings.csv")
 
-   
+    
     client = QdrantClient(host="qdrant", port=6333)
 
     client.recreate_collection(
@@ -40,4 +40,3 @@ def embed_and_preview(csv_path: str, collection_name: str = "records"):
     print(f"\n✅ Upserted {len(points)} records to Qdrant.")
 
 embed_and_preview("data/generated.csv")
-
